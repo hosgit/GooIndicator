@@ -20,7 +20,7 @@ class gooIndicator:CAShapeLayer
     static let defaultYellow = UIColor(displayP3Red: 240/255,green: 187/255,blue: 65/255,alpha: 1.0).cgColor
     static let defaultGreen  = UIColor(displayP3Red: 87/255,green: 163/255,blue: 91/255,alpha: 1.0).cgColor
     var radius = 20.0
-    var arcPosition = CGPoint(x: 207, y: 368)
+    var arcPosition = CGPoint(x: 0, y: 0)
     var newLineCap = LineCap.square
     {
         didSet
@@ -40,6 +40,7 @@ class gooIndicator:CAShapeLayer
     {
         super.init()
         self.lineWidth = lineWidth
+        arcPosition = position
         configureMe()
     }
     
